@@ -1,6 +1,7 @@
 # 🚀 Single-Page HTML CV
 
-A brief description of what this project does and who it's for.
+It is a project on roadmap website- single page cv built with html only.
+project link-https://roadmap.sh/projects/single-page-cv
 
 ## 🛠️ Built With
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
