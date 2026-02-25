@@ -1,7 +1,8 @@
 # 🌐 Basic HTML Website
 
-A multi-page website built to practice core HTML tags, semantic structure, and page linking. This project is part of the [roadmap.sh](https://roadmap.sh/projects/basic-html-website) frontend developer track.
-Project Link-https://roadmap.sh/projects/basic-html-website
+A multi-page website built to practice core HTML tags, semantic structure, and page linking. 
+
+**Project URL:** https://roadmap.sh/projects/basic-html-website
 
 ## 🎯 Project Goals
 * Use semantic HTML5 tags (`<header>`, `<nav>`, `<main>`, `<footer>`, etc.)
@@ -10,7 +11,7 @@ Project Link-https://roadmap.sh/projects/basic-html-website
 * Build a functional navigation menu without CSS
 
 ## 🛠️ Built With
-* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* HTML5
 
 ## 💻 How to View Locally
 To view this project on your own computer, follow these steps:
