@@ -1,0 +1,166 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* --- Layout Rows --- */
+.top-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.middle-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* --- Card 1: Speech Bubble --- */
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  /* CRITICAL: relative position makes it the anchor for the absolute triangle */
+  position: relative; 
+}
+
+/* The Triangle at the bottom of the speech bubble */
+.content::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Pull it below the bubble */
+  left: 30px;
+  /* Using borders to draw a triangle */
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.author-text span {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* --- Card 2: Standard Card --- */
+.card2 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* --- Card 3: Image + Dark Card --- */
+.large-profile {
+  width: 250px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.card3 {
+  background-color: #222;
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  flex: 1;
+}
+
+.card3 .stars {
+  color: #fbbf24;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card3 h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card3 .title {
+  color: #999;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* --- Card 4: Carousel Card --- */
+.card4 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center; /* Centers the text block easily */
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.carousel .arrow {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.carousel .faded {
+  opacity: 0.4;
+  transform: scale(0.8); /* Makes the side avatars slightly smaller */
+  transition: all 0.3s ease;
+}
+
+.carousel .active {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ddd;
+}
+
+.carousel-name {
+  margin-top: 15px;
+  font-weight: bold;
+}
